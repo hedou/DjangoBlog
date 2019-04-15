@@ -101,7 +101,7 @@ DATABASES = {
         'NAME': 'DjangoBlog',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'host',
+        'HOST': '',
         'PORT': 3306,
         # 'OPTIONS': {'charset': 'utf8mb4'},
     }

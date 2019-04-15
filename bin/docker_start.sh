@@ -1,6 +1,6 @@
 #!/bin/bash
 NAME="djangoblog" # Name of the application
-DJANGODIR=/code/DjangoBlog # Django project directory
+DJANGODIR=/root/test/DjangoBlog # Django project directory
 USER=root # the user to run as
 GROUP=root # the group to run as
 NUM_WORKERS=1 # how many worker processes should Gunicorn spawn
@@ -16,10 +16,10 @@ export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 #pip install -Ur requirements.txt -i http://pypi.douban.com/simple/  --trusted-host pypi.douban.com && \
 #        pip install gunicorn  -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
-python manage.py makemigrations 
-python manage.py migrate
-python manage.py collectstatic --noinput 
-python manage.py compress --force
+python3 manage.py makemigrations 
+python3 manage.py migrate
+python3 manage.py collectstatic --noinput 
+python3 manage.py compress --force
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
 exec gunicorn ${DJANGO_WSGI_MODULE}:application \

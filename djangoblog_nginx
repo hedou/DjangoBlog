@@ -4,7 +4,7 @@ server {
     server_name blog.lylinux.org;
     root /root/test/DjangoBlog;
 
-    listen 8081;
+    listen 80;
 
     keepalive_timeout 70;
     #access_log /var/log/nginx/django_access.log;

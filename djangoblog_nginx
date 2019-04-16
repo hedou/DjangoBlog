@@ -1,8 +1,4 @@
-
 server {
-
-    server_name blog.lylinux.org;
-    root /root/test/DjangoBlog;
 
     listen 80;
 

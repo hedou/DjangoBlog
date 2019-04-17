@@ -1,6 +1,6 @@
 server {
 
-    listen 80;
+    listen 8080;
 
     keepalive_timeout 70;
     #access_log /var/log/nginx/django_access.log;

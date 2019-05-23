@@ -2,9 +2,7 @@ server {
 
     listen 8080;
 
-    keepalive_timeout 70;
-    #access_log /var/log/nginx/django_access.log;
-    #error_log /var/log/nginx/django_error.log;
+   
 
     location / {
          
@@ -14,9 +12,9 @@ server {
 
         
     }
-    
+
     location /static/ {
-          expires max;
+          
           root /root/test/DjangoBlogcollectedstatic/;
     }
 

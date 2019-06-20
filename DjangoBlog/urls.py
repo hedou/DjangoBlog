@@ -21,6 +21,7 @@ from DjangoBlog.feeds import DjangoBlogFeed
 from django.views.decorators.cache import cache_page
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views import static
 from DjangoBlog.admin_site import admin_site
 from django.urls import include, path
 
